@@ -127,20 +127,25 @@ li {
 }
 
 
+.socials:hover {
+color: #D71812;
+}
+
+
 .our-services {
   position: absolute;
   width: 1600px;
   height: 1915px;
   left: calc(50% - 1601px/2 - 0.5px);
-  top: 780px;
+  top: 700px;
 }
 
 .our-services .title {
   position: relative;
   width: 350px;
   height: 30px;
-  left: calc(50% - 279px/2);
-  top: 100px;
+  left: 676px;
+  top: 154px;
 
   font-family: 'Dosis';
   font-style: normal;
@@ -162,7 +167,7 @@ li {
   width: 1100px;
   height: 0px;
   left: 245px;
-  top: 80px;
+  top: 138px;
 }
 
 .our-services .sunday-service {
@@ -471,13 +476,13 @@ color: #000000;
   left: 0px;
   right: 0px;
   top: 1950px;
-  background-color: #F3F2F2;
+  background-color: #D3D3D3;
 }
 
 .newsletter .heading {
   position: relative;
   height: 30px;
-  left: 677px;
+  left: 695px;
   right: 677px;
   top: 55px;
 
@@ -569,7 +574,7 @@ color: #000000;
 
 /* Position the content inside the overlay */
 .overlay-content {
-  position: relative;
+  position: absolute;
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
 
@@ -594,8 +599,8 @@ color: #000000;
 /* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
-  top: 10px;
-  right: 45px;
+  top: 20px;
+  right: 20px;
   font-size: 30px;
 }
 
@@ -1012,7 +1017,7 @@ input[type=submit]:hover {
 
 .csr {
   position: absolute;
-  height: 680px;
+  height: 300px;
   left: 0px;
   right: 0px;
   top: 2350px;
@@ -1022,8 +1027,8 @@ input[type=submit]:hover {
   position: relative;
   width: 1100px;
   height: 30px;
-  left: calc(50% - 645px/2 - 0.5px);
-  top: 75px;
+  left: 460px;
+  top: 65px;
 
   font-family: 'Dosis';
   font-style: normal;
@@ -1043,7 +1048,7 @@ input[type=submit]:hover {
   position: absolute;
   width: 1100px;
   height: 0px;
-  left: calc(50% - 1100px/2);
+  left: calc(50% - 1090px/2);
   top: 94px;
 
 }
@@ -1052,7 +1057,7 @@ input[type=submit]:hover {
 
   position: relative;
   height: 29px;
-  left: 600px;
+  left: 570px;
   right: 0px;
   top: 80px;
 
@@ -1072,10 +1077,9 @@ input[type=submit]:hover {
 
 .csr .carousel-inner2 {
   position: absolute;
-  height: 350px;
-  left: 312px;
+  left: 445px;
   right: 0px;
-  width: 60%;
+  width: 45%;
   top: 112px;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.5));
   border-radius: 20px;
@@ -1086,7 +1090,11 @@ input[type=submit]:hover {
   height: 734px;
   left: 0px;
   right: 0px;
-  top: 3300px;
+  top: 3150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .events .upcoming {
@@ -1101,38 +1109,44 @@ input[type=submit]:hover {
   position: absolute;
   width: 1100px;
   height: 35px;
-  left: 638px;
-  top: 64px;
+  left: 642px;
+  top: 53px;
 }
 
 .events .line {
   position: absolute;
   width: 300px;
   height: 0px;
-  left: 300;
+  left: 250;
   top: 85px;
 }
 
-.events demo {
-  position: absolute;
-  width: 431px;
-  height: 57px;
-  left: calc(50% - 431px/2 - 303.5px);
-  top: 373px;
 
-  font-family: 'Courier New';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 57px;
-  /* identical to box height */
+h3 {
+font-size: 16px;
+font-weight: bold;
+font-family: "Courier", sans-serif;
+}
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.2em;
+.countdown {
+display: flex;
+justify-content: space-around;
+text-align: center;
+}
 
-  color: #FFFFFF;
+.days,
+.hours,
+.minutes,
+.seconds {
+  font-family: "Courier", sans-serif;
+  font-size: 6rem;
+  padding: 30px;
+}
+
+.double {
+width: 40%;
+top: 600px;
+z-index: 0;
 }
 
 .location {
@@ -1140,7 +1154,7 @@ input[type=submit]:hover {
   height: 500px;
   left: 0px;
   right: 0px;
-  top: 4034px;
+  top: 3884px;
 }
 
 .location .bg {
@@ -1161,14 +1175,13 @@ input[type=submit]:hover {
 .location .contact {
   position: absolute;
   width: 500px;
-  height: 390px;
   left: calc(50% - 336px/2 + 420px);
-  top: 58px;
+  top: 125px;
 
-  font-family: 'Raleway';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 23px;
   display: flex;
   align-items: center;
@@ -1177,12 +1190,31 @@ input[type=submit]:hover {
   color: #000000;
 }
 
+.location .address {
+  position: absolute;
+  width: 500px;
+  left: calc(50% - 336px/2 + 420px);
+  top: 255px;
+
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+
 footer {
   position: absolute;
   height: 80px;
   left: 0px;
   right: 0px;
-  top: 4534px;
+  top: 4384px;
   background-color: #180c62;
 }
 
@@ -1238,6 +1270,11 @@ footer .copyright {
 
   color: #FFFFFF;
 
+}
+
+
+footer  .instagram, .twittter, .facebook:hover {
+  color: #D71812;
 }
 
 @media only screen and (max-width: 600px) {
