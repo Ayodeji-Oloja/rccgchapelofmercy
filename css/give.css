@@ -133,10 +133,11 @@ li {
 /* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
-  top: 10px;
-  right: 45px;
+  top: 20px;
+  right: 20px;
   font-size: 30px;
 }
+
 
 .overlay-content .title {
   position: absolute;
@@ -144,7 +145,6 @@ li {
   height: 98px;
   left: calc(50% - 200px/2 - 296.5px);
   top: 26px;
-
 
   font-family: 'Dosis';
   font-style: normal;
@@ -160,22 +160,18 @@ li {
 
 .overlay-content .about {
   position: absolute;
-  width: 288px;
+  width: 300px;
   height: 247px;
   left: 50px;
   top: 130px;
   text-align: left;
-
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 25px;
   align-self: auto;
-
   color: rgba(0, 0, 0, 0.6);
-
-
 }
 
 .overlay-content .enquire {
@@ -521,25 +517,6 @@ li {
 }
 
 
-
-.hero .title {
-  position: absolute;
-  width: 272px;
-  height: 60px;
-  left: 350px;
-  top: 256px;
-
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 46px;
-  letter-spacing: 0.2em;
-
-  color: #180C62;
-
-}
-
 .hero .note {
   position: absolute;
   width: 176px;
@@ -573,7 +550,7 @@ li {
   position: absolute;
   width: 279px;
   height: 30px;
-  left: calc(50% - 90px/2);
+  left: calc(50% - 75px/2);
   top: 100px;
 
   font-family: 'Dosis';
@@ -595,7 +572,7 @@ li {
   width: 1100px;
   height: 0px;
   left: 241px;
-  top: 140px;
+  top: 116px;
 
 }
 
@@ -698,7 +675,7 @@ li {
   position: absolute;
   width: 400px;
   height: 38px;
-  left: calc(50% - 260px/2);
+  left: 670px;
   top: 47px;
 
   font-family: 'Dosis';
@@ -722,7 +699,7 @@ li {
   position: absolute;
   width: 351px;
   height: 19px;
-  left: calc(50% - 351px/2 + 24px);
+  left: 620px;
   top: 106px;
 
   font-family: 'Lato';
@@ -742,7 +719,7 @@ li {
   position: absolute;
   width: 80px;
   height: 37px;
-  left: calc(50% - 120px/2 + 37px);
+  left: 750px;
   top: 160px;
 
   background: #180C62;
@@ -766,7 +743,7 @@ li {
   position: absolute;
   width: 330px;
   height: 38px;
-  left: calc(50% - 280px/2);
+  left: calc(50% - 230px/2);
   top: 50px;
 
   font-family: 'Dosis';
@@ -789,7 +766,7 @@ li {
   width: 1100px;
   height: 0px;
   left: 261px;
-  top: 73px;
+  top: 70px;
 }
 
 .transfer .note {
