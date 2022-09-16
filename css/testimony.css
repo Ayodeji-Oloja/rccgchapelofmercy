@@ -1,0 +1,825 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+nav a {
+  color: #FFFFFF;;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+}
+
+nav a:hover {
+  color: #D71812;
+}
+
+
+.menu-bar {
+  position: absolute;
+  height: 120px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  background: rgba(24, 12, 98, 0.6);
+
+}
+
+.nav {
+  position: relative;
+  width: 1020px;
+  height: 30px;
+  left: 545px;
+  top: 40px;
+  color: #FFFFFF;
+}
+
+
+.top-container {
+  position: absolute;
+  height: 550px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+}
+
+.top-container .cover {
+  position: absolute;
+  height: 550px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+
+}
+
+.top-container .title {
+  position: absolute;
+  width: 415px;
+  height: 66px;
+  right: 182px;
+  top: 222px;
+
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.2em;
+
+  color: #FFFFFF;
+
+}
+
+.top-container .note {
+  position: absolute;
+  width: 216px;
+  height: 20.9px;
+  right: 380px;
+  top: 288.2px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+
+}
+
+.logo-top {
+  position: absolute;
+  left: 70px;
+  top: 15px;
+}
+
+.btn-danger {
+  background-color: #D71812;
+  width: 132px;
+  height: 30px;
+  color: #FFFFFF;;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+}
+
+.btn-danger:hover {
+  color: #180C62;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 35px;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 72%;
+  width: 56.25%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 350px;
+  top: 120px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(70px);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #D71812;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+}
+
+
+.overlay-content .title {
+  position: absolute;
+  width: 350px;
+  height: 98px;
+  left: calc(50% - 200px/2 - 296.5px);
+  top: 26px;
+
+
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2em;
+
+  color: #180C62;
+}
+
+.overlay-content .about {
+  position: absolute;
+  width: 288px;
+  height: 247px;
+  left: 50px;
+  top: 130px;
+  text-align: left;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+  align-self: auto;
+
+  color: rgba(0, 0, 0, 0.6);
+
+
+}
+
+.overlay-content .enquire {
+  position: absolute;
+  width: 70px;
+  height: 19px;
+  left: calc(50% - 70px/2 - 28px);
+  top: 130px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: #180C62;
+
+}
+
+.overlay-content .connect {
+  position: absolute;
+  width: 77px;
+  height: 19px;
+  left: calc(50% - 77px/2 + 234.5px);
+  top: 130px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: #180C62;
+
+}
+
+.overlay-content .baptism {
+  position: absolute;
+  width: 51px;
+  height: 14px;
+  left: calc(50% - 70px/2 - 35.5px);
+  top: 165px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.overlay-content .fellowship {
+  position: absolute;
+  width: 140px;
+  height: 14px;
+  left: calc(50% - 117px/2 + 247.5px);
+  top: 165px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.overlay-content .dedication {
+  position: absolute;
+  width: 140px;
+  height: 14px;
+  left: calc(50% - 112px/2 - 14.5px);
+  top: 185px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.overlay-content .new {
+  position: absolute;
+  width: 140px;
+  height: 14px;
+  left: calc(50% - 100px/2 + 239px);
+  top: 185px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.overlay-content .marriage {
+  position: absolute;
+  width: 140px;
+  height: 14px;
+  left: calc(50% - 108px/2 - 16.5px);
+  top: 205px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.overlay-content .prayer {
+  position: absolute;
+  width: 140px;
+  height: 14px;
+  left: calc(50% - 106px/2 + 242px);
+  top: 205px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.overlay-content .testimony {
+  position: absolute;
+  width: 160px;
+  height: 14px;
+  left: calc(50% - 144px/2 + 261.5px);
+  top: 225px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.overlay-content .link {
+  position: absolute;
+  width: 140px;
+  height: 19px;
+  left: calc(50% - 100px/2 - 14.5px);
+  top: 290px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: #180C62;
+
+}
+
+.overlay-content .serve {
+  position: absolute;
+  width: 48px;
+  height: 19px;
+  left: calc(50% - 48px/2 + 220px);
+  top: 290px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: #180C62;
+
+}
+
+.overlay-content .csr {
+  position: absolute;
+  width: 22px;
+  height: 14px;
+  left: calc(50% - 22px/2 - 60px);
+  top: 325px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.overlay-content .baptismal {
+  position: absolute;
+  width: 140px;
+  height: 14px;
+  left: calc(50% - 104px/2 + 241px);
+  top: 325px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.overlay-content .location {
+  position: absolute;
+  width: 60px;
+  height: 14px;
+  left: calc(50% - 60px/2 - 40px);
+  top: 345px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.overlay-content .believers {
+  position: absolute;
+  width: 140px;
+  height: 14px;
+  left: calc(50% - 99px/2 + 238.5px);
+  top: 345px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.overlay-content .workers {
+  position: absolute;
+  width: 180px;
+  height: 11px;
+  left: calc(50% - 135px/2 + 257.5px);
+  top: 365px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.test {
+  position: absolute;
+  width: 1100px;
+  height: 1000px;
+  left: calc(50% - 1100px/2 - 1px);
+  top: 560px;
+
+}
+
+.test .title {
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  left: calc(50% - 242px/2 - 1.5px);
+  top: 20px;
+
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.2em;
+
+  color: #180C62;
+
+}
+
+.test .line {
+  position: absolute;
+  width: 1100px;
+  height: 0.06px;
+  left: 0px;
+  top: 29.94px;
+
+}
+
+.test .flier {
+  position: absolute;
+  width: 306.51px;
+  height: 294.64px;
+  left: 0px;
+  top: 120px;
+}
+
+.test .start {
+  position: absolute;
+  width: 18px;
+  height: 47px;
+  left: 50px;
+  top: 630px;
+
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #D71812;
+
+}
+
+.test .scriptures {
+  position: absolute;
+  width: 300px;
+  height: 96px;
+  left: 70px;
+  top: 650px;
+
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #180C62;
+
+}
+
+.test .end {
+  position: absolute;
+  width: 18px;
+  height: 47px;
+  left: 350px;
+  top: 745px;
+
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #D71812;
+
+}
+
+.test .verse {
+  position: absolute;
+  width: 200px;
+  height: 23px;
+  left: 135px;
+  top: 790px;
+
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #D71812;
+
+}
+
+form {
+  position: absolute;
+  width: 500px;
+  height: 850px;
+  top: 113px;
+}
+
+
+.fill {
+left: 600px;
+}
+
+
+
+/* Style inputs */
+  .test input[type=text] {
+  width: 100%;
+  padding: 12px 5px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+.test input[type=tel] {
+  width: 100%;
+  padding: 12px 5px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+.submit {
+  width: 100px;
+  background-color: #180C62;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 530px;
+  color: #FFFFFF;
+}
+
+.submit:hover {
+  opacity: 0.8;
+}
+
+
+textarea {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 100%;
+  height: 343px;
+
+  border: 1px solid #C2C2C2;
+  border-radius: 4px;
+}
+
+
+
+footer {
+  position: absolute;
+  height: 80px;
+  left: 0px;
+  right: 0px;
+  top: 1550px;
+  background-color: #180c62;
+}
+
+footer .logo {
+  position: absolute;
+  width: 178px;
+  height: 50.73px;
+  right: 100px;
+  bottom: 10px;
+}
+
+footer .twitter {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 787.81px;
+  top: 30px;
+}
+
+footer .facebook {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 709px;
+  top:30px;
+}
+
+footer .instagram {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 866.62px;
+  top:30px;
+}
+
+
+
+footer .copyright {
+  position: absolute;
+  width: 350px;
+  height: 15px;
+  left: 85px;
+  top: 33px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    font-size: 0.3rem;
+    padding: 0;
+  }
+}
